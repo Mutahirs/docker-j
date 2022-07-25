@@ -1,6 +1,6 @@
 [
     {
-      "name": "docker-jenkins",
+      "name": "red",
       "image": "378968434263.dkr.ecr.us-east-1.amazonaws.com/jenkins-pipeline",
       "cpu": 10,
       "memory": 256,
