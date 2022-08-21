@@ -9,8 +9,7 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  AWS_ACCES_KEY     = credentials("AWS_ACCES_KEY")
-  AWS_SECRET_KEY     = credentials("AWS_SECRET_KEY")
+  
 }
 
 ##resource "aws_key_pair" "awskey" {
