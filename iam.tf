@@ -2,19 +2,21 @@ resource "aws_iam_role" "ecs-instance-role" {
   name = "ecs-instance-role-test"
   path = "/"
 
-  assume_role_policy 
+   assume_role_policy = <<EOF
 {
-  {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
+  "Version": "2008-10-17",
+  "Statement": [
+    {
+      "Action": "*"
+       "Resource": "*"
+      },
+      "Effect": "Allow"
     }
   ]
 }
+EOF
 }
+
 
 resource "aws_iam_role_policy_attachment" "ecs-instance-role-attachment" {
   role       = aws_iam_role.ecs-instance-role.name
