@@ -2,7 +2,7 @@ resource "aws_iam_role" "ecs-instance-role" {
   name = "ecs-instance-role-test"
   path = "/"
 
-  assume_role_policy = jsonencode({
+  assume_role_policy = jsonencode
 {
   {
     "Version": "2012-10-17",
