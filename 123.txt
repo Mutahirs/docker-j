@@ -1,3 +1,7 @@
 learn 123
 hello mutahir
 authour bernard shaw
+
+actor amir khan
+actor anil kapoor
+
