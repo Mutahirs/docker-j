@@ -9,4 +9,3 @@ actor anil kapoor
 
 actor john depp
 actor john lever
-
